@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.87rem;
+  border-radius: 1rem;
+  background-color: #0f0f0f;
+  max-width: 75%;
+  padding: 1.8rem;
+  width: 400px;
+  margin-bottom: 1.25rem;
+
+  & input {
+    padding: 0.5rem;
+    border-color: whitesmoke;
+    border-radius: 1rem;
+  }
+}
+.areaCard {
+  display: grid;
+  width: 1280px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #0f0f0f;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+
+    & p {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    article {
+      display: flex;
+      place-content: center;
+      gap: 1rem;
+
+      & button {
+        display: flex;
+        place-content: center;
+        place-items: center;
+        width: 2rem;
+        height: 2rem;
+        padding: 1.5rem;
+      }
+
+      & button:nth-child(1) {
+        background-color: rgba(
+          255,
+          0,
+          0,
+          0.384
+        ); /* Cor de fundo do primeiro botão */
+      }
+
+      & button:nth-child(2) {
+        background-color: rgb(2, 82, 2); /* Cor de fundo do segundo botão */
+      }
+    }
+  }
+}
